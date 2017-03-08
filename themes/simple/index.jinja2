@@ -80,7 +80,7 @@
 
 
             <div class="col-md-6 col-sm-12">
-              <img class="photo img-responsive img-circle pull-right" src="{{ profile.image }}">
+              <img class="photo img-responsive img-circle pull-right" src="{{ profile.image }}" alt="Profil picture">
             </div>
           </div>
 
@@ -131,7 +131,7 @@
             <h3>About</h3>
           </header>
           <div class="col-md-9">
-            <h3></h3> {{ h.md(profile.summary) }}
+            {{ h.md(profile.summary) }}
           </div>
         </section>
         {% endif %} {% if skills %}
